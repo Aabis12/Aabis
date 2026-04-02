@@ -236,12 +236,28 @@ header.scrolled {
 }
 
 .logo {
-  font-family: var(--serif);
-  font-size: 1.9rem;
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 0.02em;
+  font-family: var(--display);
+  font-size: clamp(2.9rem, 3vw, 4.35rem);
+  font-weight: 900;
+  line-height: 0.76;
+  letter-spacing: -0.1em;
   opacity: 0;
   animation: fadeDown 0.7s 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.logo-wordmark {
+  display: inline-block;
+}
+
+.logo-dot {
+  display: inline-block;
+  color: #f05073;
+  font-size: 0.88em;
+  line-height: 0.8;
+  transform: translateY(-0.02em);
 }
 
 .nav-links {
@@ -358,8 +374,14 @@ header.scrolled {
   position: absolute;
   top: 28px;
   left: 42px;
-  font-family: var(--serif);
-  font-size: 1.85rem;
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 0.02em;
+  font-family: var(--display);
+  font-size: clamp(2.8rem, 2.9vw, 4rem);
+  font-weight: 900;
+  line-height: 0.76;
+  letter-spacing: -0.1em;
   color: #fff;
   opacity: 0;
   transition: opacity 0.4s 0.3s;
@@ -838,6 +860,10 @@ header.scrolled {
     padding: 14px 24px;
   }
 
+  .logo {
+    font-size: clamp(2.4rem, 9vw, 3.2rem);
+  }
+
   .nav-links,
   .lang,
   .side-contact {
@@ -875,6 +901,11 @@ header.scrolled {
 
   .menu-overlay {
     padding: 80px 28px;
+  }
+
+  .menu-overlay .m-logo {
+    left: 28px;
+    font-size: clamp(2.3rem, 8vw, 3.2rem);
   }
 
   .menu-footer {
