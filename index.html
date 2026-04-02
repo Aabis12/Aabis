@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Aabis — Freelance Full Stack Developer & IoT Engineer · Delhi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-logo">
+      <span style="animation-delay:0.05s">A</span>
+      <span style="animation-delay:0.12s">a</span>
+      <span style="animation-delay:0.19s">b</span>
+      <span style="animation-delay:0.26s">i</span>
+      <span style="animation-delay:0.33s">s</span>
+      <span style="animation-delay:0.4s">.</span>
+    </div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar" id="loaderBar"></div>
+    </div>
+  </div>
+
+  <div id="page-trans"></div>
+
+  <div id="cur-dot"></div>
+  <div id="cur-ring"></div>
+  <div id="cur-label">View</div>
+
+  <a href="mailto:mdaabisahmed@gmail.com" class="side-contact">mdaabisahmed@gmail.com</a>
+
+  <div class="menu-overlay" id="menuOverlay">
+    <a href="#" class="m-logo">Aabis.</a>
+    <h1 class="dot">.</h1>
+
+    <div class="menu-lang2">
+      <a href="#">FR</a>
+      <a href="#" class="active">EN</a>
+    </div>
+
+    <nav>
+      <a href="#work" onclick="closeMenu()"><span>Design</span><span class="menu-arrow">→</span></a>
+      <a href="#photos" onclick="closeMenu()"><span>Photos</span><span class="menu-arrow">→</span></a>
+      <a href="#lookbook" onclick="closeMenu()"><span>Look book</span><span class="menu-arrow">→</span></a>
+      <a href="#about" onclick="closeMenu()"><span>About</span><span class="menu-arrow">→</span></a>
+    </nav>
+
+    <div class="menu-footer">
+      <a href="mailto:mdaabisahmed@gmail.com">mdaabisahmed@gmail.com</a>
+      <a href="tel:+917303799080">+91 7303799080</a>
+      <div class="menu-social">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <header id="header">
+    <a href="#" class="logo">Aabis.</a>
+
+    <ul class="nav-links">
+      <li><a href="#work">Design</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#lookbook">Look book</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang">
+        <a href="#">FR</a>
+        <span style="opacity:0.2">/</span>
+        <a href="#" class="active">EN</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-left">
+      <p class="hero-greeting">👋 &nbsp;my name is Aabis and I am a freelance</p>
+
+      <div class="hero-title">
+        <h1 class="top-text">Web Developer</h1>
+      
+        <div class="hero-center-photo">
+          <img src="photo/4887100a-6d1b-445f-89e7-d3f56e3e1670.png" alt="Aabis" class="hero-img">
+        </div>
+        <div class="hero-switch-arrow">↗</div>      
+        <h1 class="bottom-text">&amp; IoT Engineer</h1>
+      </div>
+      <p class="hero-location">based in Delhi, India.</p>
+
+      <div class="hero-ctas">
+        <a href="#work" class="btn btn-dark">
+          <span>Full Stack Developer</span>
+          <span class="btn-arrow">→</span>
+        </a>
+
+        <a href="#photos" class="btn btn-outline">
+          <span>IoT Developer</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+  <div class="marquee-section">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-item"><span class="marquee-dot"></span>Web Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Photography</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Brand Identity</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Webflow Expert</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Delhi, India</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Art Direction</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>UI · UX Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Freelance Since 2018</div>
+
+      <div class="marquee-item"><span class="marquee-dot"></span>Web Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Photography</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Brand Identity</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Webflow Expert</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Delhi, India</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Art Direction</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>UI · UX Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Freelance Since 2018</div>
+    </div>
+  </div>
+
+  <section class="work-section" id="work">
+    <div class="section-tag reveal">Portfolio — Design</div>
+    <h2 class="section-h2 reveal" style="transition-delay:0.1s">Selected <em>works</em> &amp; projects</h2>
+
+    <div class="work-grid" style="margin-top:64px">
+      <div class="work-item tall reveal" data-work="true">
+        <div class="work-thumb img-c1"></div>
+        <div class="work-overlay">
+          <div class="work-title">Brand Identity</div>
+          <div class="work-sub">Webflow · UI Design · 2024</div>
+        </div>
+      </div>
+
+      <div class="work-item reveal" style="transition-delay:0.1s" data-work="true">
+        <div class="work-thumb img-c2"></div>
+        <div class="work-overlay">
+          <div class="work-title">E-Commerce</div>
+          <div class="work-sub">UX · Webflow · 2023</div>
+        </div>
+      </div>
+
+      <div class="work-item reveal" style="transition-delay:0.2s" data-work="true">
+        <div class="work-thumb img-c3"></div>
+        <div class="work-overlay">
+          <div class="work-title">Luxury Portfolio</div>
+          <div class="work-sub">Web Design · 2023</div>
+        </div>
+      </div>
+
+      <div class="work-item reveal" style="transition-delay:0.1s" data-work="true">
+        <div class="work-thumb img-c4"></div>
+        <div class="work-overlay">
+          <div class="work-title">Music Platform</div>
+          <div class="work-sub">UI · Animation · 2022</div>
+        </div>
+      </div>
+
+      <div class="work-item reveal" style="transition-delay:0.2s" data-work="true">
+        <div class="work-thumb img-c5"></div>
+        <div class="work-overlay">
+          <div class="work-title">Editorial</div>
+          <div class="work-sub">Art Direction · 2022</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="about-strip" id="about">
+    <div class="reveal-left">
+      <h2 class="about-h2">A developer who <em>builds</em><br>before he ships.</h2>
+    </div>
+
+    <div class="reveal-right" style="transition-delay:0.15s">
+      <p class="about-p">I am a freelance full stack developer and IoT engineer based in Delhi. I create digital products that blend performance, usability, and strong visual identity.</p>
+      <p class="about-p">Whether you need a website, dashboard, embedded project, or complete product experience, I am here to help you stand out.</p>
+      <a href="#contact" class="btn-ghost"><span>Learn more about me</span><span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+
+  <section class="services-section" id="lookbook">
+    <div class="section-tag reveal">What I do</div>
+    <h2 class="section-h2 reveal" style="transition-delay:0.1s">Services I <em>offer</em></h2>
+
+    <div class="services-grid">
+      <div class="service-card reveal" style="transition-delay:0.1s">
+        <div class="service-inner">
+          <span class="service-num">01</span>
+          <h3 class="service-h3">Web Development</h3>
+          <p class="service-p">Custom websites and applications built with attention to performance, scalability, and clean UI. From landing pages to full-stack platforms.</p>
+        </div>
+      </div>
+
+      <div class="service-card reveal" style="transition-delay:0.2s">
+        <div class="service-inner">
+          <span class="service-num">02</span>
+          <h3 class="service-h3">IoT Engineering</h3>
+          <p class="service-p">Connected systems, sensor-based solutions, microcontrollers, and embedded prototypes designed for reliable real-world use.</p>
+        </div>
+      </div>
+
+      <div class="service-card reveal" style="transition-delay:0.3s">
+        <div class="service-inner">
+          <span class="service-num">03</span>
+          <h3 class="service-h3">UI & Product Design</h3>
+          <p class="service-p">Interfaces and product systems that feel modern, intuitive, and purposeful across all digital touchpoints.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <p class="section-tag reveal" style="color:rgba(14,13,12,0.4)">Let's talk</p>
+    <h2 class="contact-h2 reveal" style="transition-delay:0.1s">You have a project?<br><em>Let's start a conversation.</em></h2>
+    <p class="contact-info reveal" style="transition-delay:0.2s">mdaabisahmed@gmail.com · +91 7303799080</p>
+
+    <a href="mailto:mdaabisahmed@gmail.com" class="btn-black reveal" style="transition-delay:0.3s">
+      <span>Let's start a project</span>
+      <span class="btn-arrow">→</span>
+    </a>
+  </section>
+
+  <footer>
+    <div>
+      <div class="footer-brand-name">Aabis.</div>
+      <p class="footer-brand-desc">Freelance Full Stack Developer &amp; IoT Engineer<br/>based in Delhi, India.</p>
+    </div>
+
+    <nav>
+      <a href="#work">Design</a>
+      <a href="#photos">Photos</a>
+      <a href="#lookbook">Look book</a>
+      <a href="#about">About</a>
+      <a href="mailto:mdaabisahmed@gmail.com">Contact</a>
+    </nav>
+
+    <div class="footer-right">
+      <div class="footer-socials">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Aabis — All rights reserved</span>
+      <span>Delhi, India</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
